@@ -1,0 +1,3 @@
+C:/Users/Jakub/ClionProjects/skills/cmake-build-debug/CMakeFiles/skills.dir
+C:/Users/Jakub/ClionProjects/skills/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Jakub/ClionProjects/skills/cmake-build-debug/CMakeFiles/rebuild_cache.dir

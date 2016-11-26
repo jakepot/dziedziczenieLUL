@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="skills"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/Jakub/ClionProjects/skills/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jakub/ClionProjects/skills/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jakub/ClionProjects/skills/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jakub/ClionProjects/skills/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jakub/ClionProjects/skills/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="skills">
+				<Option output="C:/Users/Jakub/ClionProjects/skills/cmake-build-debug/skills.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Jakub/ClionProjects/skills/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include/c++/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jakub/ClionProjects/skills/cmake-build-debug/Makefile&quot;  VERBOSE=1 skills"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jakub/ClionProjects/skills/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jakub/ClionProjects/skills/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jakub/ClionProjects/skills/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="skills/fast">
+				<Option output="C:/Users/Jakub/ClionProjects/skills/cmake-build-debug/skills.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Jakub/ClionProjects/skills/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include/c++/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jakub/ClionProjects/skills/cmake-build-debug/Makefile&quot;  VERBOSE=1 skills/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jakub/ClionProjects/skills/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jakub/ClionProjects/skills/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jakub/ClionProjects/skills/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/Jakub/ClionProjects/skills/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jakub/ClionProjects/skills/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jakub/ClionProjects/skills/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jakub/ClionProjects/skills/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jakub/ClionProjects/skills/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/Jakub/ClionProjects/skills/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jakub/ClionProjects/skills/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jakub/ClionProjects/skills/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jakub/ClionProjects/skills/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Jakub/ClionProjects/skills/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/Jakub/ClionProjects/skills/aoe.cpp">
+			<Option target="skills"/>
+		</Unit>
+		<Unit filename="C:/Users/Jakub/ClionProjects/skills/aoe.h">
+			<Option target="skills"/>
+		</Unit>
+		<Unit filename="C:/Users/Jakub/ClionProjects/skills/buff.cpp">
+			<Option target="skills"/>
+		</Unit>
+		<Unit filename="C:/Users/Jakub/ClionProjects/skills/buff.h">
+			<Option target="skills"/>
+		</Unit>
+		<Unit filename="C:/Users/Jakub/ClionProjects/skills/damage.cpp">
+			<Option target="skills"/>
+		</Unit>
+		<Unit filename="C:/Users/Jakub/ClionProjects/skills/damage.h">
+			<Option target="skills"/>
+		</Unit>
+		<Unit filename="C:/Users/Jakub/ClionProjects/skills/debuff.cpp">
+			<Option target="skills"/>
+		</Unit>
+		<Unit filename="C:/Users/Jakub/ClionProjects/skills/debuff.h">
+			<Option target="skills"/>
+		</Unit>
+		<Unit filename="C:/Users/Jakub/ClionProjects/skills/defence.cpp">
+			<Option target="skills"/>
+		</Unit>
+		<Unit filename="C:/Users/Jakub/ClionProjects/skills/defence.h">
+			<Option target="skills"/>
+		</Unit>
+		<Unit filename="C:/Users/Jakub/ClionProjects/skills/drain.cpp">
+			<Option target="skills"/>
+		</Unit>
+		<Unit filename="C:/Users/Jakub/ClionProjects/skills/drain.h">
+			<Option target="skills"/>
+		</Unit>
+		<Unit filename="C:/Users/Jakub/ClionProjects/skills/heal.cpp">
+			<Option target="skills"/>
+		</Unit>
+		<Unit filename="C:/Users/Jakub/ClionProjects/skills/heal.h">
+			<Option target="skills"/>
+		</Unit>
+		<Unit filename="C:/Users/Jakub/ClionProjects/skills/magic.cpp">
+			<Option target="skills"/>
+		</Unit>
+		<Unit filename="C:/Users/Jakub/ClionProjects/skills/magic.h">
+			<Option target="skills"/>
+		</Unit>
+		<Unit filename="C:/Users/Jakub/ClionProjects/skills/main.cpp">
+			<Option target="skills"/>
+		</Unit>
+		<Unit filename="C:/Users/Jakub/ClionProjects/skills/melee.cpp">
+			<Option target="skills"/>
+		</Unit>
+		<Unit filename="C:/Users/Jakub/ClionProjects/skills/melee.h">
+			<Option target="skills"/>
+		</Unit>
+		<Unit filename="C:/Users/Jakub/ClionProjects/skills/offence.cpp">
+			<Option target="skills"/>
+		</Unit>
+		<Unit filename="C:/Users/Jakub/ClionProjects/skills/offence.h">
+			<Option target="skills"/>
+		</Unit>
+		<Unit filename="C:/Users/Jakub/ClionProjects/skills/phys.cpp">
+			<Option target="skills"/>
+		</Unit>
+		<Unit filename="C:/Users/Jakub/ClionProjects/skills/phys.h">
+			<Option target="skills"/>
+		</Unit>
+		<Unit filename="C:/Users/Jakub/ClionProjects/skills/ranged.cpp">
+			<Option target="skills"/>
+		</Unit>
+		<Unit filename="C:/Users/Jakub/ClionProjects/skills/ranged.h">
+			<Option target="skills"/>
+		</Unit>
+		<Unit filename="C:/Users/Jakub/ClionProjects/skills/single.cpp">
+			<Option target="skills"/>
+		</Unit>
+		<Unit filename="C:/Users/Jakub/ClionProjects/skills/single.h">
+			<Option target="skills"/>
+		</Unit>
+		<Unit filename="C:/Users/Jakub/ClionProjects/skills/skill.cpp">
+			<Option target="skills"/>
+		</Unit>
+		<Unit filename="C:/Users/Jakub/ClionProjects/skills/skill.h">
+			<Option target="skills"/>
+		</Unit>
+		<Unit filename="C:/Users/Jakub/ClionProjects/skills/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
