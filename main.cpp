@@ -83,11 +83,11 @@ void makeObject(string dir, string name){
         drainList.emplace_back(time, dmg, max, heal, self, mana, name,clas);
     }
     else if (dir == "buff"){
-        cout << "Format: clas #mana_cost state selftcast(1/0) #duration #max_targets" << endl;
-        int mana, time, max;
+        cout << "Format: clas #mana_cost state selftcast(1/0) #duration" << endl;
+        int mana, time;
         bool self;
         string stat;
-        cin >> clas >> mana >> stat >> self >> time >> max;
+        cin >> clas >> mana >> stat >> self >> time;
         buffList.emplace_back(stat, time, self, mana, name, clas);
     }
 }
