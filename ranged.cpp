@@ -14,3 +14,11 @@ void ranged::modify() {
     cin >> this->name >> this->forClass >> this->damage
         >> this->range >> this->ammo;
 }
+
+void ranged::details() {
+    cout << "Name: " << name << endl;
+    cout << "Class: " << forClass<< endl;
+    cout << "Damage: " << damage << endl;
+    cout << "Range: " << range << endl;
+    cout << "Ammo: " << ammo << endl;
+}

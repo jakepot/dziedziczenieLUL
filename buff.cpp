@@ -14,3 +14,12 @@ void buff::modify() {
     cin >> this->name >> this->forClass >> this->manaCost >> this->statistic
         >> this->selfcast >> this->time;
 }
+
+void buff::details() {
+    cout << "Name: " << name << endl;
+    cout << "Class: " << forClass << endl;
+    cout << "Mana: " << manaCost << endl;
+    cout << "State: " << statistic << endl;
+    cout << "Selfcast: " << selfcast << endl;
+    cout << "Duration: " << time << endl;
+}

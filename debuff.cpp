@@ -14,3 +14,12 @@ void debuff::modify() {
     cin >> this->name >> this->forClass >> this->manaCost
         >> this->state >> this->time >> this->maxTargets;
 }
+
+void debuff::details() {
+    cout << "Name: " << name << endl;
+    cout << "Class: " << forClass << endl;
+    cout << "Mana: " << manaCost << endl;
+    cout << "State: " << state << endl;
+    cout << "Duration: " << time << endl;
+    cout << "Max_targets: " << maxTargets << endl;
+}

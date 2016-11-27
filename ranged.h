@@ -15,6 +15,7 @@ protected:
 public:
     ranged(int rng, string amm, int dmg, string nam, string clas);
     void modify();
+    void details();
 };
 
 

@@ -15,3 +15,14 @@ void drain::modify() {
         >> this->spellDmg >> this->hpGain >> this->time >> this->selfcast
         >> this->maxTargets;
 }
+
+void drain::details() {
+    cout << "Name: " << heal::name << endl;
+    cout << "Class: " << heal::forClass << endl;
+    cout << "Mana: " << heal::manaCost << endl;
+    cout << "Damage: " << spellDmg << endl;
+    cout << "Heal_value: " << hpGain << endl;
+    cout << "Duration: " << time << endl;
+    cout << "Selfcast: " << selfcast << endl;
+    cout << "Max_targets: " << maxTargets << endl;
+}
