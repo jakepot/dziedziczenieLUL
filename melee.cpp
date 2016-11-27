@@ -14,7 +14,7 @@ void melee::details() {
     cout << "Class: " << forClass << endl;
     cout << "Damage: " << damage << endl;
     cout << "Weapon: " << weapon << endl;
-    cout << "Crit chance: " << critChance << endl;
+    cout << "Crit_chance: " << critChance << endl;
 }
 
 void melee::modify() {

@@ -211,6 +211,65 @@ void modifyObject(string dir,string name){
 
 }
 
+void showDetails(string dir,string name){
+    if (dir == "melee"){
+        for (auto it = meleeList.begin(); it != meleeList.end(); it++){
+            if (it->writeName() == name){
+                it->details();
+                break;
+            }
+        }
+    }
+    else if (dir == "ranged"){
+        for (auto it = rangedList.begin(); it != rangedList.end(); it++){
+            if (it->writeName() == name){
+                it->details();
+                break;
+            }
+        }
+    }
+    else if (dir == "debuff"){
+        for (auto it = debuffList.begin(); it != debuffList.end(); it++){
+            if (it->writeName() == name){
+                it->details();
+                break;
+            }
+        }
+    }
+    else if (dir == "buff"){
+        for (auto it = buffList.begin(); it != buffList.end(); it++){
+            if (it->writeName() == name){
+                it->details();
+                break;
+            }
+        }
+    }
+    else if (dir == "aoe"){
+        for (auto it = aoeList.begin(); it != aoeList.end(); it++){
+            if (it->writeName() == name){
+                it->details();
+                break;
+            }
+        }
+    }
+    else if (dir == "single"){
+        for (auto it = singleList.begin(); it != singleList.end(); it++){
+            if (it->writeName() == name){
+                it->details();
+                break;
+            }
+        }
+    }
+    else if (dir == "drain"){
+        for (auto it = drainList.begin(); it != drainList.end(); it++){
+            if (it->heal::writeName() == name){
+                it->details();
+                break;
+            }
+        }
+    }
+}
+
 void meleeShow(){
     for (auto it = meleeList.begin(); it != meleeList.end(); it++)
         cout << it->writeName() << endl;
@@ -246,11 +305,10 @@ void buffShow(){
         cout << it->writeName() << endl;
 }
 
-void traverse(string currentDir, map<string,vector<string> > dirs/*, map<string,vector<skill> > skills*/) {
+void traverse(string currentDir, map<string,vector<string> > dirs) {
     std::vector<string>::iterator it1 = dirs.find(currentDir)->second.begin();
     if (dirs[currentDir].size() == 0)
         cout << "dir:" << currentDir << endl;
-    //cout << dirs.find(currentDir)->second.size() << endl;
 
     if (dirs.find(currentDir)->second.size() == 0){
         if (currentDir == "melee")
@@ -338,6 +396,14 @@ int main() {
             cin >> name;
             if (map[currentDir].size() == 0)
                 modifyObject(currentDir, name);
+            else
+                cout << "Nie jestes w lisciu" << endl;
+        }
+        if (com == "SHOW"){
+            string name;
+            cin >> name;
+            if (map[currentDir].size() == 0)
+                showDetails(currentDir, name);
             else
                 cout << "Nie jestes w lisciu" << endl;
         }

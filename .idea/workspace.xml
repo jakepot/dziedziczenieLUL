@@ -12,27 +12,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="600ae0d2-ef9d-46f8-8416-9cbe70e1e753" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/skills.dir/aoe.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/skills.dir/aoe.cpp.obj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/skills.dir/buff.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/skills.dir/buff.cpp.obj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/skills.dir/debuff.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/skills.dir/debuff.cpp.obj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/skills.dir/drain.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/skills.dir/drain.cpp.obj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/skills.dir/main.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/skills.dir/main.cpp.obj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/skills.dir/objects.a" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/skills.dir/objects.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/skills.dir/ranged.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/skills.dir/ranged.cpp.obj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/skills.dir/single.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/skills.dir/single.cpp.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/skills.exe" afterPath="$PROJECT_DIR$/cmake-build-debug/skills.exe" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aoe.cpp" afterPath="$PROJECT_DIR$/aoe.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aoe.h" afterPath="$PROJECT_DIR$/aoe.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/buff.cpp" afterPath="$PROJECT_DIR$/buff.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/buff.h" afterPath="$PROJECT_DIR$/buff.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/debuff.cpp" afterPath="$PROJECT_DIR$/debuff.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/debuff.h" afterPath="$PROJECT_DIR$/debuff.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/drain.cpp" afterPath="$PROJECT_DIR$/drain.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/drain.h" afterPath="$PROJECT_DIR$/drain.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ranged.cpp" afterPath="$PROJECT_DIR$/ranged.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ranged.h" afterPath="$PROJECT_DIR$/ranged.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/single.cpp" afterPath="$PROJECT_DIR$/single.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/single.h" afterPath="$PROJECT_DIR$/single.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/melee.cpp" afterPath="$PROJECT_DIR$/melee.cpp" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -65,7 +48,7 @@
           <file leaf-file-name="drain.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/drain.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
+                <state relative-caret-position="272">
                   <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
                   <folding />
                 </state>
@@ -156,15 +139,45 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+          <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/main.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="558">
-                  <caret line="246" column="1" lean-forward="true" selection-start-line="246" selection-start-column="1" selection-end-line="246" selection-end-column="1" />
+                <state relative-caret-position="513">
+                  <caret line="269" column="5" lean-forward="false" selection-start-line="269" selection-start-column="5" selection-end-line="269" selection-end-column="5" />
                   <folding>
                     <element signature="e#0#19#0" expanded="true" />
                     <element signature="e#404#1439#0" expanded="false" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="damage.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/damage.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="170">
+                  <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="melee.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/melee.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="306">
+                  <caret line="18" column="2" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="melee.cpp" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/melee.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="272">
+                  <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -199,8 +212,6 @@
         <option value="$PROJECT_DIR$/skill.cpp" />
         <option value="$PROJECT_DIR$/skill.h" />
         <option value="$PROJECT_DIR$/melee.h" />
-        <option value="$PROJECT_DIR$/melee.cpp" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/ranged.h" />
         <option value="$PROJECT_DIR$/ranged.cpp" />
         <option value="$PROJECT_DIR$/debuff.h" />
@@ -213,6 +224,8 @@
         <option value="$PROJECT_DIR$/drain.cpp" />
         <option value="$PROJECT_DIR$/buff.h" />
         <option value="$PROJECT_DIR$/buff.cpp" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/melee.cpp" />
       </list>
     </option>
   </component>
@@ -483,7 +496,8 @@
       <workItem from="1480128420457" duration="1065000" />
       <workItem from="1480160340715" duration="28346000" />
       <workItem from="1480195819849" duration="1972000" />
-      <workItem from="1480253101582" duration="6257000" />
+      <workItem from="1480253101582" duration="6300000" />
+      <workItem from="1480261474586" duration="807000" />
     </task>
     <task id="LOCAL-00001" summary="makeObject buff fixed">
       <created>1480199489076</created>
@@ -506,11 +520,18 @@
       <option name="project" value="LOCAL" />
       <updated>1480258490402</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="details() added">
+      <created>1480259399367</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1480259399367</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52090000" />
+    <option name="totallyTimeSpent" value="52940000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -546,7 +567,8 @@
     <MESSAGE value="makeObject buff fixed" />
     <MESSAGE value="modify() added" />
     <MESSAGE value="only print dirs if they're leaves in traverse" />
-    <option name="LAST_COMMIT_MESSAGE" value="only print dirs if they're leaves in traverse" />
+    <MESSAGE value="details() added" />
+    <option name="LAST_COMMIT_MESSAGE" value="details() added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -631,7 +653,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="38" lean-forward="false" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -767,13 +788,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/damage.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/heal.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -813,7 +827,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -825,26 +838,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/melee.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/melee.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="2" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="246" column="1" lean-forward="true" selection-start-line="246" selection-start-column="1" selection-end-line="246" selection-end-column="1" />
+        <state relative-caret-position="513">
+          <caret line="269" column="5" lean-forward="false" selection-start-line="269" selection-start-column="5" selection-end-line="269" selection-end-column="5" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
             <element signature="e#404#1439#0" expanded="false" />
@@ -864,7 +861,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="37" lean-forward="true" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -918,7 +914,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/drain.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="272">
           <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
           <folding />
         </state>
@@ -944,6 +940,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" column="41" lean-forward="false" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/damage.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/melee.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="2" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/melee.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
           <folding />
         </state>
       </provider>
