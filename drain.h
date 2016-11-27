@@ -13,6 +13,7 @@ class drain : public damage, public heal{
     int time;
 public:
     drain(int tim, int dmg, int targ, int hp, bool self, int mana, string nam, string clas);
+    void modify();
 };
 
 #endif //SKILLS_DRAIN_H

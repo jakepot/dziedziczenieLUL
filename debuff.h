@@ -14,6 +14,7 @@ protected:
     int time;
 public:
     debuff(string st, int tim, int targ, int mana, string nam, string clas);
+    void modify();
 };
 
 

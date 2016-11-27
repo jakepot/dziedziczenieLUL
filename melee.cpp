@@ -16,3 +16,10 @@ void melee::details() {
     cout << "Weapon: " << weapon << endl;
     cout << "Crit chance: " << critChance << endl;
 }
+
+void melee::modify() {
+    cout << "Format: name class #damage weapon #crit_chance" << endl;
+    cin >> this->name >> this->forClass >> this->damage
+        >> this->weapon >> this->critChance;
+
+}

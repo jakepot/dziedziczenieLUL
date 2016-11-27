@@ -80,7 +80,7 @@ void makeObject(string dir, string name){
         int mana, dmg, heal, time, max;
         bool self;
         cin >> clas >> mana >> dmg >> heal >> time >> self >> max;
-        drainList.emplace_back(time, dmg, max, heal, self, mana, name,clas);
+        drainList.emplace_back(time, dmg, max, heal, self, mana, name, clas);
     }
     else if (dir == "buff"){
         cout << "Format: clas #mana_cost state selftcast(1/0) #duration" << endl;
@@ -151,6 +151,66 @@ void deleteObject(string dir, string name){
     }
 }
 
+void modifyObject(string dir,string name){
+    if (dir == "melee"){
+        for (auto it = meleeList.begin(); it != meleeList.end(); it++){
+            if (it->writeName() == name){
+                it->modify();
+                break;
+            }
+        }
+    }
+    else if (dir == "ranged"){
+        for (auto it = rangedList.begin(); it != rangedList.end(); it++){
+            if (it->writeName() == name){
+                it->modify();
+                break;
+            }
+        }
+    }
+    else if (dir == "debuff"){
+        for (auto it = debuffList.begin(); it != debuffList.end(); it++){
+            if (it->writeName() == name){
+                it->modify();
+                break;
+            }
+        }
+    }
+    else if (dir == "buff"){
+        for (auto it = buffList.begin(); it != buffList.end(); it++){
+            if (it->writeName() == name){
+                it->modify();
+                break;
+            }
+        }
+    }
+    else if (dir == "aoe"){
+        for (auto it = aoeList.begin(); it != aoeList.end(); it++){
+            if (it->writeName() == name){
+                it->modify();
+                break;
+            }
+        }
+    }
+    else if (dir == "single"){
+        for (auto it = singleList.begin(); it != singleList.end(); it++){
+            if (it->writeName() == name){
+                it->modify();
+                break;
+            }
+        }
+    }
+    else if (dir == "drain"){
+        for (auto it = drainList.begin(); it != drainList.end(); it++){
+            if (it->heal::writeName() == name){
+                it->modify();
+                break;
+            }
+        }
+    }
+
+}
+
 void meleeShow(){
     for (auto it = meleeList.begin(); it != meleeList.end(); it++)
         cout << it->writeName() << endl;
@@ -206,36 +266,16 @@ void traverse(string currentDir, map<string,vector<string> > dirs/*, map<string,
             drainShow();
         else if (currentDir == "buff")
             buffShow();
-        /*
-        cout << skills.find(currentDir)->second.size() << endl;
-        std::vector<skill>::iterator it2 = skills.find(currentDir)->second.begin();
-            // zmien na auto
-        for (; it2 != skills[currentDir].end(); it2++)
-            it2->writeName();
-        */
     }
 
     for (; it1 != dirs.find(currentDir)->second.end(); ++it1)
-        traverse(*it1, dirs/*, skills*/);
-    //cout << *it1 << endl;
+        traverse(*it1, dirs);
 }
 
 int main() {
 
-    //vector<skill> meleeList, rangedList, debuffList, buffList, aoeList, singleList, drainList;
-
     string currentDir = "skill";
-    /*
-    map<string,vector<skill> > skills{
-            {"melee",meleeList},
-            {"ranged",rangedList},
-            {"debuff",debuffList},
-            {"buff",buffList},
-            {"aoe",aoeList},
-            {"single",singleList},
-            {"drain",drainList}
-    };
-    */
+
     map<string,vector<string> > map{
             {"skill",{"phys", "magic"}},
             {"phys",{"melee", "ranged"}},
@@ -266,8 +306,6 @@ int main() {
     drain tymp(10, 50, 5, 100, 1, 20, "succ", "slunker");
     drainList.push_back(tymp);
 
-    //traverse(currentDir, map/*, skills*/);
-
     while(true){
         string com;
         cin >> com;
@@ -291,6 +329,14 @@ int main() {
             cin >> name;
             if (map[currentDir].size() == 0)
                 deleteObject(currentDir, name);
+            else
+                cout << "Nie jestes w lisciu" << endl;
+        }
+        if (com == "MDO"){
+            string name;
+            cin >> name;
+            if (map[currentDir].size() == 0)
+                modifyObject(currentDir, name);
             else
                 cout << "Nie jestes w lisciu" << endl;
         }

@@ -12,6 +12,7 @@ class single : public damage{
     string type;
 public:
     single(string typ, int dmg, int targ, int mana, string nam, string clas);
+    void modify();
 };
 
 
