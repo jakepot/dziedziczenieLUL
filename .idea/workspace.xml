@@ -11,24 +11,19 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="600ae0d2-ef9d-46f8-8416-9cbe70e1e753" name="Default" comment="modify() added">
+    <list default="true" id="600ae0d2-ef9d-46f8-8416-9cbe70e1e753" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/skills.dir/aoe.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/skills.dir/aoe.cpp.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/skills.dir/buff.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/skills.dir/buff.cpp.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/skills.dir/debuff.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/skills.dir/debuff.cpp.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/skills.dir/drain.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/skills.dir/drain.cpp.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/skills.dir/main.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/skills.dir/main.cpp.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/skills.dir/melee.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/skills.dir/melee.cpp.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/skills.dir/objects.a" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/skills.dir/objects.a" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/skills.dir/ranged.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/skills.dir/ranged.cpp.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/skills.dir/single.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/skills.dir/single.cpp.obj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/skills.exe" afterPath="$PROJECT_DIR$/cmake-build-debug/skills.exe" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aoe.cpp" afterPath="$PROJECT_DIR$/aoe.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aoe.h" afterPath="$PROJECT_DIR$/aoe.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/buff.cpp" afterPath="$PROJECT_DIR$/buff.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/buff.h" afterPath="$PROJECT_DIR$/buff.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/debuff.cpp" afterPath="$PROJECT_DIR$/debuff.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/debuff.h" afterPath="$PROJECT_DIR$/debuff.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/drain.cpp" afterPath="$PROJECT_DIR$/drain.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/drain.h" afterPath="$PROJECT_DIR$/drain.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/melee.cpp" afterPath="$PROJECT_DIR$/melee.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/melee.h" afterPath="$PROJECT_DIR$/melee.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ranged.cpp" afterPath="$PROJECT_DIR$/ranged.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ranged.h" afterPath="$PROJECT_DIR$/ranged.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/single.cpp" afterPath="$PROJECT_DIR$/single.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/single.h" afterPath="$PROJECT_DIR$/single.h" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -112,7 +107,7 @@
             <entry file="file://$PROJECT_DIR$/buff.cpp">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="238">
-                  <caret line="14" column="40" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+                  <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
                   <folding />
                 </state>
               </provider>
@@ -155,8 +150,8 @@
           <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/main.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="101">
-                  <caret line="89" column="27" lean-forward="false" selection-start-line="89" selection-start-column="27" selection-end-line="89" selection-end-column="27" />
+                <state relative-caret-position="303">
+                  <caret line="246" column="1" lean-forward="true" selection-start-line="246" selection-start-column="1" selection-end-line="246" selection-end-column="1" />
                   <folding>
                     <element signature="e#0#19#0" expanded="true" />
                     <element signature="e#404#1439#0" expanded="false" />
@@ -479,7 +474,7 @@
       <workItem from="1480128420457" duration="1065000" />
       <workItem from="1480160340715" duration="28346000" />
       <workItem from="1480195819849" duration="1972000" />
-      <workItem from="1480253101582" duration="4986000" />
+      <workItem from="1480253101582" duration="5324000" />
     </task>
     <task id="LOCAL-00001" summary="makeObject buff fixed">
       <created>1480199489076</created>
@@ -488,23 +483,30 @@
       <option name="project" value="LOCAL" />
       <updated>1480199489076</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="modify() added">
+      <created>1480258120927</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1480258120927</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50819000" />
+    <option name="totallyTimeSpent" value="51157000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18020834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30232558" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30232558" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -913,15 +915,15 @@
     <entry file="file://$PROJECT_DIR$/buff.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="40" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+          <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="89" column="27" lean-forward="false" selection-start-line="89" selection-start-column="27" selection-end-line="89" selection-end-column="27" />
+        <state relative-caret-position="303">
+          <caret line="246" column="1" lean-forward="true" selection-start-line="246" selection-start-column="1" selection-end-line="246" selection-end-column="1" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
             <element signature="e#404#1439#0" expanded="false" />

@@ -248,7 +248,8 @@ void buffShow(){
 
 void traverse(string currentDir, map<string,vector<string> > dirs/*, map<string,vector<skill> > skills*/) {
     std::vector<string>::iterator it1 = dirs.find(currentDir)->second.begin();
-    cout << "dir:" << currentDir << endl;
+    if (dirs[currentDir].size() == 0)
+        cout << "dir:" << currentDir << endl;
     //cout << dirs.find(currentDir)->second.size() << endl;
 
     if (dirs.find(currentDir)->second.size() == 0){
