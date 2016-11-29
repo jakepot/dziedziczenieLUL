@@ -79,6 +79,8 @@ map
 -
 vector
 -
+fstream
+-
 skill.h
 C:/Users/Jakub/ClionProjects/skills/skill.h
 melee.h
@@ -142,5 +144,7 @@ C:/Users/Jakub/ClionProjects/skills/skill.h
 
 C:/Users/Jakub/ClionProjects/skills/skill.h
 iostream
+-
+fstream
 -
 

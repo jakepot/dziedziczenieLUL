@@ -9,13 +9,13 @@
 #include "offence.h"
 
 class debuff : public offence{
-protected:
     string state;
     int time;
 public:
     debuff(string st, int tim, int targ, int mana, string nam, string clas);
     void modify();
     void details();
+    void writeFile(fstream &file);
 };
 
 

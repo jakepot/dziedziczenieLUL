@@ -9,10 +9,12 @@
 #include "magic.h"
 
 class defence : public magic{
-protected:
     bool selfcast;
 public:
     defence(bool self, int mana, string nam, string clas);
+    void details();
+    void modify();
+    void writeFile(fstream &file);
 };
 
 

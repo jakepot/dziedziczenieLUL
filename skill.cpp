@@ -12,3 +12,16 @@ skill::skill(string nam, string clas) {
 string skill::writeName() {
     return name;
 }
+
+void skill::details() {
+    cout << "Name: " << name << endl;
+    cout << "Class: " << forClass << endl;
+}
+
+void skill::modify() {
+    cin >> name >> forClass;
+}
+
+void skill::writeFile(fstream &file) {
+    file << name << endl << forClass << endl;
+}

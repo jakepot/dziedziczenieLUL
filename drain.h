@@ -15,6 +15,7 @@ public:
     drain(int tim, int dmg, int targ, int hp, bool self, int mana, string nam, string clas);
     void modify();
     void details();
+    void writeFile(fstream &file);
 };
 
 #endif //SKILLS_DRAIN_H

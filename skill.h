@@ -6,6 +6,7 @@
 #define SKILLS_SKILL_H
 
 #include <iostream>
+#include <fstream>
 
 using namespace std;
 
@@ -17,8 +18,10 @@ protected:
 
 public:
     skill(string nam, string clas);
-    //skill(){};
     string writeName();
+    virtual void details();
+    virtual void modify();
+    virtual void writeFile(fstream &file);
 };
 
 

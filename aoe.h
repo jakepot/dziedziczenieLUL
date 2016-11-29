@@ -9,12 +9,12 @@
 #include "damage.h"
 
 class aoe : public damage{
-protected:
     int radius;
 public:
     aoe(int rad, int dmg, int targ, int mana, string nam, string clas);
     void modify();
     void details();
+    void writeFile(fstream &file);
 };
 
 

@@ -9,10 +9,14 @@
 #include "magic.h"
 
 class offence : public magic{
-protected:
     int maxTargets;
 public:
     offence(int targ, int mana, string nam, string clas);
+    void details();
+    void modify();
+    void writeFile(fstream &file);
+    int getmaxTargets();
+    void setmaxTargets(int a);
 };
 
 

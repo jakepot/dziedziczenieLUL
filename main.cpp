@@ -1,6 +1,8 @@
 #include <iostream>
 #include <map>
 #include <vector>
+#include <fstream>
+
 #include "skill.h"
 #include "melee.h"
 #include "ranged.h"
@@ -20,6 +22,8 @@ vector<aoe> aoeList;
 vector<single> singleList;
 vector<drain> drainList;
 
+bool drainWasPrinted = 0;
+
 void tree(){
     cout << "                       skill" << endl;
     cout << "                         +" << endl;
@@ -36,6 +40,116 @@ void tree(){
     cout << "                         +---------+--------+  |" << endl;
     cout << "                         v         v        v  v" << endl;
     cout << "                        aoe      single     drain" << endl;
+}
+
+void saveToFile(){
+    fstream plik;
+    plik.open("file.txt", ios::out);
+    if(plik.good())
+    {
+        plik << meleeList.size() << endl;
+        for (auto it = meleeList.begin(); it != meleeList.end(); it++){
+            it->writeFile(plik);
+        }
+        plik << rangedList.size() << endl;
+        for (auto it = rangedList.begin(); it != rangedList.end(); it++){
+            it->writeFile(plik);
+        }
+        plik << debuffList.size() << endl;
+        for (auto it = debuffList.begin(); it != debuffList.end(); it++){
+            it->writeFile(plik);
+        }
+        plik << buffList.size() << endl;
+        for (auto it = buffList.begin(); it != buffList.end(); it++){
+            it->writeFile(plik);
+        }
+        plik << aoeList.size() << endl;
+        for (auto it = aoeList.begin(); it != aoeList.end(); it++){
+            it->writeFile(plik);
+        }
+        plik << singleList.size() << endl;
+        for (auto it = singleList.begin(); it != singleList.end(); it++){
+            it->writeFile(plik);
+        }
+        plik << drainList.size() << endl;
+        for (auto it = drainList.begin(); it != drainList.end(); it++){
+            it->writeFile(plik);
+        }
+    } else cout << "Dostep do pliku zostal zabroniony!" << endl;
+    plik.close();
+}
+
+void loadFromFile(){
+    string name, clas;
+    int i, n;
+    fstream plik;
+    plik.open("file.txt", ios::in);
+    if(plik.good()){
+        plik >> n;
+        if (n > 0){
+            string wpn;
+            int crit, dmg;
+            for (i = 0; i < n; i++){
+                plik >> name >> clas >> dmg >> wpn >> crit;
+                meleeList.emplace_back(wpn, crit, dmg, name, clas);
+            }
+        }
+        plik >> n;
+        if (n > 0){
+            string ammo;
+            int rng, dmg;
+            for (i = 0; i < n; i++){
+                plik >> name >> clas >> dmg >> rng >> ammo ;
+                rangedList.emplace_back(rng, ammo, dmg, name, clas);
+            }
+        }
+        plik >> n;
+        if (n > 0){
+            string stat;
+            int time, targ, mana;
+            for (i = 0; i < n; i++){
+                plik >> name >> clas >> mana >> targ >> stat >> time;
+                debuffList.emplace_back(stat, time, targ, mana, name, clas);
+            }
+        }
+        plik >> n;
+        if (n > 0){
+            string stat;
+            int time, mana;
+            bool self;
+            for (i = 0; i < n; i++) {
+                plik >> name >> clas >> mana >> self >> stat >> time;
+                buffList.emplace_back(stat, time, self, mana, name, clas);
+            }
+        }
+        plik >> n;
+        if (n > 0){
+            int rad, dmg, targ, mana;
+            for (i = 0; i < n; i++){
+                plik >> name >> clas >> mana >> targ >> dmg >> rad;
+                aoeList.emplace_back(rad, dmg, targ, mana, name, clas);
+            }
+        }
+        plik >> n;
+        if (n > 0){
+            string type;
+            int dmg, targ, mana;
+            for (i = 0; i < n; i++){
+                plik >> name >> clas >> mana >> targ >> dmg >> type;
+                singleList.emplace_back(type, dmg, targ, mana, name, clas);
+            }
+        }
+        plik >> n;
+        if (n > 0){
+            int time, dmg, targ, hp, mana;
+            bool self;
+            for (i = 0; i < n; i++){
+                plik >> name >> clas >> mana >> self >> hp >> targ >> dmg >> time;
+                drainList.emplace_back(time, dmg, targ, hp, self, mana, name, clas);
+            }
+        }
+    } else cout << "Dostep do pliku zostal zabroniony!" << endl;
+    plik.close();
 }
 
 void makeObject(string dir, string name){
@@ -308,6 +422,8 @@ void buffShow(){
 void traverse(string currentDir, map<string,vector<string> > dirs) {
     std::vector<string>::iterator it1 = dirs.find(currentDir)->second.begin();
     if (dirs[currentDir].size() == 0)
+        if (currentDir == "drain" && drainWasPrinted == 1){}
+        else
         cout << "dir:" << currentDir << endl;
 
     if (dirs.find(currentDir)->second.size() == 0){
@@ -321,8 +437,12 @@ void traverse(string currentDir, map<string,vector<string> > dirs) {
             aoeShow();
         else if (currentDir == "single")
             singleShow();
-        else if (currentDir == "drain")
-            drainShow();
+        else if (currentDir == "drain") {
+            if (drainWasPrinted == 0) {
+                drainShow();
+                drainWasPrinted = 1;
+            }
+        }
         else if (currentDir == "buff")
             buffShow();
     }
@@ -352,24 +472,14 @@ int main() {
             {"buff",{}}
     };
 
-    melee tmp("kosa",50,100,"wzebra","lotrzyk");
-    meleeList.push_back(tmp);
-    meleeList.emplace_back("miecz",10,10,"jeb","zul");
-
-    ranged tem(1000,"strzala",20,"szczal","lucznik");
-    rangedList.push_back(tem);
-
-    single temp("ogien",200,1,30,"firebol","mag");
-    singleList.push_back(temp);
-
-    drain tymp(10, 50, 5, 100, 1, 20, "succ", "slunker");
-    drainList.push_back(tymp);
 
     while(true){
         string com;
         cin >> com;
-        if (com == "DIR")
+        if (com == "DIR") {
             traverse(currentDir, map);
+            drainWasPrinted = 0;
+        }
         if (com == "CD")
             cin >> currentDir;
         if (com == "TREE"){
@@ -406,6 +516,12 @@ int main() {
                 showDetails(currentDir, name);
             else
                 cout << "Nie jestes w lisciu" << endl;
+        }
+        if (com == "SAVE"){
+            saveToFile();
+        }
+        if (com == "LOAD"){
+            loadFromFile();
         }
         if (com == "EXIT")
             break;

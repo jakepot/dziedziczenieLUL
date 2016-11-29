@@ -9,10 +9,15 @@
 #include "offence.h"
 
 class damage : public offence{
-protected:
     int spellDmg;
 public:
     damage(int dmg, int targ, int mana, string nam, string clas);
+    void details();
+    void fillDetails();
+    void modify();
+    void fillModify();
+    void writeFile(fstream &file);
+    void fillFile(fstream &file);
 };
 
 

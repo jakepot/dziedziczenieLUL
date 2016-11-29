@@ -10,19 +10,20 @@ drain::drain(int tim, int dmg, int targ, int hp, bool self, int mana, string nam
 }
 
 void drain::modify() {
-    cout << "Format: name clas #mana_cost #damage #heal_value #duration selfcast(1/0) #max_targets" << endl;
-    cin >> this->heal::name >> this->heal::forClass >> this->heal::manaCost
-        >> this->spellDmg >> this->hpGain >> this->time >> this->selfcast
-        >> this->maxTargets;
+    cout << "Format: name clas #mana_cost selfcast(1/0) #heal_value #max_targets #damage #duration" << endl;
+    heal::modify();
+    damage::fillModify();
+    cin >> time;
 }
 
 void drain::details() {
-    cout << "Name: " << heal::name << endl;
-    cout << "Class: " << heal::forClass << endl;
-    cout << "Mana: " << heal::manaCost << endl;
-    cout << "Damage: " << spellDmg << endl;
-    cout << "Heal_value: " << hpGain << endl;
+    heal::details();
+    damage::fillDetails();
     cout << "Duration: " << time << endl;
-    cout << "Selfcast: " << selfcast << endl;
-    cout << "Max_targets: " << maxTargets << endl;
+}
+
+void drain::writeFile(fstream &file) {
+    heal::writeFile(file);
+    damage::fillFile(file);
+    file << time << endl;
 }

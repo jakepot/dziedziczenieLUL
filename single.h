@@ -9,11 +9,13 @@
 #include "damage.h"
 
 class single : public damage{
+protected:
     string type;
 public:
     single(string typ, int dmg, int targ, int mana, string nam, string clas);
     void modify();
     void details();
+    void writeFile(fstream &file);
 };
 
 

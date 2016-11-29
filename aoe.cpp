@@ -9,16 +9,17 @@ aoe::aoe(int rad, int dmg, int targ, int mana, string nam, string clas) : damage
 }
 
 void aoe::modify() {
-    cout << "Format: name class #mana_cost #damage #radius #max_targets" << endl;
-    cin >> this->name >> this->forClass >> this->manaCost
-        >> this->spellDmg >> this->radius >> this->maxTargets;
+    cout << "Format: name class #mana_cost #max_targets #damage #radius" << endl;
+    damage::modify();
+    cin >> radius;
 }
 
 void aoe::details() {
-    cout << "Name: " << name << endl;
-    cout << "Class: " << forClass << endl;
-    cout << "Mana: " << manaCost << endl;
-    cout << "Damage: " << spellDmg << endl;
+    damage::details();
     cout << "Radius: " << radius << endl;
-    cout << "Max_targets: " << maxTargets << endl;
+}
+
+void aoe::writeFile(fstream &file) {
+    damage::writeFile(file);
+    file << radius << endl;
 }

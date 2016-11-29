@@ -9,10 +9,12 @@
 #include "defence.h"
 
 class heal : public defence{
-protected:
     int hpGain;
 public:
     heal(int hp, bool self, int mana, string nam, string clas);
+    void details();
+    void modify();
+    void writeFile(fstream &file);
 };
 
 

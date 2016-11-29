@@ -10,16 +10,18 @@ melee::melee(string wpn, int crit, int dmg, string nam, string clas) : phys(dmg,
 }
 
 void melee::details() {
-    cout << "Name: " << name << endl;
-    cout << "Class: " << forClass << endl;
-    cout << "Damage: " << damage << endl;
+    phys::details();
     cout << "Weapon: " << weapon << endl;
     cout << "Crit_chance: " << critChance << endl;
 }
 
 void melee::modify() {
     cout << "Format: name class #damage weapon #crit_chance" << endl;
-    cin >> this->name >> this->forClass >> this->damage
-        >> this->weapon >> this->critChance;
+    phys::modify();
+    cin >> weapon >> critChance;
+}
 
+void melee::writeFile(fstream &file) {
+    phys::writeFile(file);
+    file << weapon << endl << critChance << endl;
 }

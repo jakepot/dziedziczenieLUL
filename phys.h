@@ -9,10 +9,12 @@
 #include "skill.h"
 
 class phys : public skill{
-protected:
     int damage;
 public:
     phys(int dmg, string nam, string clas);
+    void details();
+    void modify();
+    void writeFile(fstream &file);
 };
 
 

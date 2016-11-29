@@ -9,13 +9,13 @@
 #include "defence.h"
 
 class buff : public defence{
-protected:
     string statistic;
     int time;
 public:
     buff(string stat, int tim, bool self, int mana, string nam, string clas);
     void modify();
     void details();
+    void writeFile(fstream &file);
 };
 
 

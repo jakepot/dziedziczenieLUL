@@ -9,16 +9,17 @@ single::single(string typ, int dmg, int targ, int mana, string nam, string clas)
 }
 
 void single::modify() {
-    cout << "Format: name class #mana_cost #damage type #max_targets" << endl;
-    cin >> this->name >> this->forClass >> this->manaCost
-        >> this->spellDmg >> this->type >> this->maxTargets;
+    cout << "Format: name class #mana_cost #max_targets #damage type" << endl;
+    damage::modify();
+    cin >> type;
 }
 
 void single::details() {
-    cout << "Name: " << name << endl;
-    cout << "Class: " << forClass << endl;
-    cout << "Mana: " << manaCost << endl;
-    cout << "Damage: " << spellDmg << endl;
+    damage::details();
     cout << "Type: " << type << endl;
-    cout << "Max_targets: " << maxTargets << endl;
+}
+
+void single::writeFile(fstream &file) {
+    damage::writeFile(file);
+    file << type << endl;
 }

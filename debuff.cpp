@@ -10,16 +10,18 @@ debuff::debuff(string st, int tim, int targ, int mana, string nam, string clas) 
 }
 
 void debuff::modify() {
-    cout << "Format: name class #mana_cost state #duration #max_targets" << endl;
-    cin >> this->name >> this->forClass >> this->manaCost
-        >> this->state >> this->time >> this->maxTargets;
+    cout << "Format: name class #mana_cost #max_targets state #duration" << endl;
+    offence::modify();
+    cin >> this->state >> this->time;
 }
 
 void debuff::details() {
-    cout << "Name: " << name << endl;
-    cout << "Class: " << forClass << endl;
-    cout << "Mana: " << manaCost << endl;
+    offence::details();
     cout << "State: " << state << endl;
     cout << "Duration: " << time << endl;
-    cout << "Max_targets: " << maxTargets << endl;
+}
+
+void debuff::writeFile(fstream &file) {
+    offence::writeFile(file);
+    file << state << endl << time << endl;
 }

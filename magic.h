@@ -9,10 +9,12 @@
 #include "skill.h"
 
 class magic : public skill{
-protected:
     int manaCost;
 public:
     magic(int mana, string nam, string clas);
+    void details();
+    void modify();
+    void writeFile(fstream &file);
 };
 
 
